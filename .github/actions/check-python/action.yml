@@ -35,7 +35,7 @@ runs:
       run: |
         if [ -d "./tests" ];
         then
-          echo "::set-output name=files::*.py tests/*.py"
+          echo "::set-output name=files:: tests/*.py"
         else
           echo "::set-output name=files::*.py"
         fi        
