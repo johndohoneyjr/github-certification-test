@@ -6,6 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: .github/actions/check-python@main
+      - uses: ./.github/actions/check-python
         with:
           PYTHON_VERSION: 3.8
