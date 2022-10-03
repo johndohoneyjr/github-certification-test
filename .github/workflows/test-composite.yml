@@ -1,6 +1,6 @@
 name: Use Composite Action
 on:
-  push:
+
   workflow_dispatch:
 jobs:
   build:
