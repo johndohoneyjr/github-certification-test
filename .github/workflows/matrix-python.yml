@@ -10,15 +10,15 @@ jobs:
   build:
     strategy:
       matrix:
-        version: [3.7, 3.8, 3.9, 3.10]
+        version: ["3.7", "3.8", "3.9", "3.10"]
         os: [ubuntu-latest, macos-latest, windows-latest]
         include:
           - os: ubuntu-latest
-            version:: 3.6
+            version:: "3.6"
         exclude:
           - os: windows-latest
-            version:: 3.10
-            
+            version:: "3.10"
+
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
