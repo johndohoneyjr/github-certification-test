@@ -10,14 +10,12 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
+        os: [macos-latest, ubuntu-latest]
         version: ["3.10"]
         include:
           - os: ubuntu-latest
             version: "3.6"
-        exclude:
-          - os: windows-latest
-            version: "3.10"
+
            
     runs-on: ${{ matrix.os }}
     steps:
