@@ -11,10 +11,10 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        version: ["3.7", "3.8", "3.9", "3.10"]
+        version: ["3.7.0", "3.8.0", "3.9.0", "3.10"]
         include:
           - os: ubuntu-latest
-            version: "3.6"
+            version: "3.6.0"
         exclude:
           - os: windows-latest
             version: 3.10
