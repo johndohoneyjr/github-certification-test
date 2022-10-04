@@ -40,4 +40,4 @@ jobs:
         flake8 ./Ch02/02-04-challenge-use-a-matrix-strategy-to-test-an-application --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test the application with mock data
       run: |
-        python ./Ch02/02-04-challenge-use-a-matrix-strategy-to-test-an-application/sum_frequencies.py MOCK_DATA.json
+        python ./Ch02/02-04-challenge-use-a-matrix-strategy-to-test-an-application/sum_frequencies.py ./Ch02/02-04-challenge-use-a-matrix-strategy-to-test-an-application/MOCK_DATA.json
