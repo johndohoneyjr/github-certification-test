@@ -12,10 +12,10 @@ jobs:
       matrix:
         python-version: [3.7, 3.8, 3.9, 3.10]
         os: [ubuntu-latest, macos-latest, windows-latest]
-      include:
+        include:
           - os: ubuntu-latest
             python-version:: 3.6
-      exclude:
+        exclude:
           - os: windows-latest
             python-version:: 3.10
             
