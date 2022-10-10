@@ -18,9 +18,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: npm install ./Ch03/03_04-publishing-software-packages
       - run: npm ci ./Ch03/03_04-publishing-software-packages
-      - run: npm run ./Ch03/03_04-publishing-software-packages
+      - run: npm test ./Ch03/03_04-publishing-software-packages
 
   publish-gpr:
     needs: build
